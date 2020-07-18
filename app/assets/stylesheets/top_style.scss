@@ -1,0 +1,20 @@
+$white-back: #fffffe;
+$bold-text: #094067;
+$button: #3da9fc;
+$font: #5f6c7b;
+
+.top-page{
+    &__header{
+        height: 30em;
+        background-color: $button;
+
+        &__nav{
+            display: flex;
+            
+            ul{
+                list-style: none;
+            }
+        }
+    }
+
+}
