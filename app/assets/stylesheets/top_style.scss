@@ -1,12 +1,14 @@
-$white-back: #fffffe;
+$white: #fffffe;
 $bold-text: #094067;
 $button: #3da9fc;
-$font: #5f6c7b;
+$font-b: #5f6c7b;
+$eme: #bae8e8;
+$gray: #90b4ce;
 
 .top-page{
     &__header{
-        height: 30em;
-        background-color: $button;
+        height: 13vh;
+        background-color: $gray;
 
         &__nav{
             display: flex;
@@ -17,4 +19,30 @@ $font: #5f6c7b;
         }
     }
 
+    &__main{
+        &__intro{
+            &__container {
+                overflow: auto;
+                scroll-snap-type: y mandatory;
+                height: 87vh;
+              }
+              .area {
+                scroll-snap-align: start;
+                height: 87vh;
+
+                &:nth-child(1) {
+                    background-color: $eme;
+                    color: $bold-text;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-family: bungee, sans-serif;
+                    font-size: 10vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+              }
+        }
+    }
+}
 }
